@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+    <title>Coversão e Soma</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"> 
+    <meta charset="utf-8"/> 
+</head>
+
+<body>
+    <h3>Programa de Conversão e soma de dois valores</h3>
+
+    <!-- Definição de Formulário -->
+    <form name="FormConcatena" action=" " method="post">
+        Digite o primeiro numero............: <input type="text" name="f_n1" /><p></p>
+        Digite o segundo numero...: <input type="text" name="f_n2" /><p></p>
+        <input type="button" name="btn_concatena" value="Somar" onclick="soma()" />
+        <input type="reset" name="btn_cancela" value="Cancelar" />
+    </form>
+
+    <!-- Definição do código JavaScript -->
+    <script language="javascript">
+   
+    <!--    
+    /* 	Objetivo: Capturar nome e sobrenome do usuário, concatenar (juntar) os campos e 
+	   apresentar uma saudação personalizada 
+       Elementos de Entrada: método form do objeto document
+	   Elementos de Saída: método alert do objeto window 
+    */
+
+    /* Definição das Variáveis */
+        var js_n1;
+        var js_n2;
+        var js_soma;
+
+    function soma( ) {
+
+    /* Entrada de Dados */
+	   js_n1 = document.FormConcatena.f_n1.value;
+	   js_n2 = document.FormConcatena.f_n2.value;
+
+           
+
+    /* Processamento de Dados */
+	   js_soma =  parseInt(js_n1)+parseInt(js_n2);
+
+    /* Saída de Dados */
+        window.alert('Resultado: '+ js_soma);
+    } 
+    //-->
+    </script>
+
+
+</body>
+</html>

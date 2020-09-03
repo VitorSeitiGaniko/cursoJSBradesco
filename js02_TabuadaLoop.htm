@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Tabuada</title>
+    <meta charset="utf-8"/> 
+</head>
+
+<body>
+    <h3>Escolha a tabuada que quiser !!!</h3>
+
+    <!-- Definição de Formulário -->
+    <form name="FormNumero" action=" " method="post">
+       
+        Digite a tabuda que deseja: <input type="text" name="f_n1" /><p></p>
+        <input type="button" name="btn_concatena" value="Calcular" onclick="CalculaTabuada()" />
+        
+    </form>
+
+ 
+    <script language="javascript">
+   
+    function CalculaTabuada(){
+
+       var js_n1;
+       var i;
+
+       js_n1 = parseInt(document.FormNumero.f_n1.value);
+       
+       for(i=1; i<=10; i++){
+          document.write('<p>1 x ' + i + ' = ' + (i*js_n1));
+       }       
+ }
+    //-->
+    </script>
+
+
+</body>
+</html>

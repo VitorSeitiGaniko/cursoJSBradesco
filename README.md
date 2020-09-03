@@ -1,0 +1,1 @@
+Curso introdutório de Java Script, contendo as características, fundamentos e estruturas da linguagem. Fluxos de controles: desvios condicionais e laços de repetição. E métodos complementares: upperCase, lowerCase, Confirm, e métodos de botões e formulário.

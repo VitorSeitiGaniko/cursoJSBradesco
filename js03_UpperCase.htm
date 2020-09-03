@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Upper Case</title>
+    <meta charset="utf-8"/> 
+</head>
+
+<body>
+    <h3>Usando Upper Case</h3>
+
+    <form name="FormNome" action=" " method="post">
+       
+        Digite uma palavra: <input type="text" name="nome" /><p></p>
+        <input type="button" name="btn_concatena" value="Maiusculo" onclick="maiusculo()" />
+        <input type="button" name="btn_concatena" value="Minusculo" onclick="minusculo()" />
+
+    </form>
+ 
+    <script language="javascript">
+
+      var oi;
+      var ola;
+      oi = 'teste'
+      ola = oi.toUpperCase()
+      document.write(ola)
+
+      
+
+      function maiusculo(){
+        var js_nome;
+        js_nome = document.FormNome.nome.value;
+        var js_nomeAtt1;
+        js_nomeAtt1 = js_nome.toUpperCase()
+        document.write(js_nomeAtt1)
+
+      }
+      
+      function minusculo(){
+        var js_nome;
+        js_nome = document.FormNome.nome.value;
+        var js_nomeAtt2;
+        js_nomeAtt2 = js_nome.toLowerCase()
+        document.write(js_nomeAtt2)
+
+        
+      }
+      
+      
+    //-->
+    </script>
+
+
+</body>
+</html>

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Maior número</title>
+    <meta charset="utf-8"/> 
+</head>
+
+<body>
+    <h3>Achando o maior número</h3>
+
+    <!-- Definição de Formulário -->
+    <form name="FormNumeros" action=" " method="post">
+        Digite o primeiro numero............: <input type="text" name="f_n1" /><p></p>
+        Digite o segundo numero...: <input type="text" name="f_n2" /><p></p>
+        <input type="button" name="btn_concatena" value="Calcular" onclick="maiorMenor()" />
+        <input type="reset" name="btn_cancela" value="Cancelar" />
+    </form>
+
+    <!-- Definição do código JavaScript -->
+    <script language="javascript">
+   
+    <!--    
+    /* 	Objetivo: Capturar nome e sobrenome do usuário, concatenar (juntar) os campos e 
+	   apresentar uma saudação personalizada 
+       Elementos de Entrada: método form do objeto document
+	   Elementos de Saída: método alert do objeto window 
+    */
+
+    /* Definição das Variáveis */
+        
+
+
+    function maiorMenor(){
+
+       var js_n1;
+       var js_n2;
+        
+
+       js_n1 = parseInt(document.FormNumeros.f_n1.value);
+       js_n2 = parseInt(document.FormNumeros.f_n2.value);
+       
+
+       
+
+        if(js_n1 > js_n2){
+           window.alert('Resultado: o maior número é o '+ js_n1);
+        }else{
+           window.alert('Resultado: o maior número é o '+ js_n2);
+        }        
+    }
+ 
+    //-->
+    </script>
+
+
+</body>
+</html>
